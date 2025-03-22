@@ -32,20 +32,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/Mission.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/Mission.png">
 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- <link rel="preload" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></noscript>
     <link rel="stylesheet"> -->
 
     <!-- lazy load css -->
-    <link rel="stylesheet" href="https://cdn.mindler.com/all-css/my-sets/css/global-plugins.css">
+    <link rel="stylesheet" href="./assets/css/global-plugins.css">
 
-    <link href="https://cdn.mindler.com/all-css/my-sets/css/my-styles.css?1739447319" rel="stylesheet">
-    <link href="https://cdn.mindler.com/all-css/my-sets/css/my-media.css?1739447319" rel="stylesheet">
-    <link href="https://cdn.mindler.com/all-css/my-sets/css/lightslider.css" rel="stylesheet">
-    <link href="https://cdn.mindler.com/all-css/my-sets/css/revamp.css?1734958962" rel="stylesheet">
+    <link href="./assets/css/my-styles.css" rel="stylesheet">
+    <link href="./assets/css/my-media.css" rel="stylesheet">
+    <link href="./assets/css/lightslider.css" rel="stylesheet">
+    <link href="./assets/css/revamp.css" rel="stylesheet">
 
-    <link href="https://cdn.mindler.com/all-css/my-sets/css/chatbot.css?1720605072" rel="stylesheet">
+    <link href="./assets/css/chatbot.css" rel="stylesheet">
 
 
 
@@ -223,27 +225,21 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
         </div> 
       </section>
     <div class="user-block-main">
-        <span class="user-close"> <img src="https://mindlerimages.imgix.net/home/user-close.svg"></span>
+        <span class="user-close"> <img src="./icons/close.png"></span>
         <div class="user-block">
-            <div class="set-item display">
+            <div class="set-item display" style="text-align: center;">
                 <h3>I am a</h3>
-                <div class="row">
+                <div class="row" style="margin-left: 190px;">
                     <div class="col-sm-4">
                         <div class="user-selection zoom for-school" id="school-step-one">
-                            <div class="img-sec"><img src="https://mindlerimages.imgix.net/home/user-student.svg" loading="lazy"></div>
+                            <div class="img-sec"><img src="./icons/student.png" loading="lazy"></div>
                             <h4>student</h4>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="user-selection zoom for-institution" id="institution-step-one">
-                            <div class="img-sec"> <img src="https://mindlerimages.imgix.net/home/user-school.svg"></div>
-                            <h4>institution</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="user-selection zoom for-professional" id="professional-step-one">
-                            <div class="img-sec"><img src="https://mindlerimages.imgix.net/home/user-professional.svg"></div>
-                            <h4>career professional</h4>
+                            <div class="img-sec"> <img src="./icons/parent.png"></div>
+                            <h4>Parent</h4>
                         </div>
                     </div>
                 </div>
@@ -251,68 +247,33 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
             <div class="set-item school-selection" id="school-step-two">
                 <h3>I need help with</h3>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" style="margin-left: 190px;">
                         <div class="user-selection zoom for-counselling" onclick="googleEvent('Email Only Signup','Homepage','Student: Career Selection & Planning','')" id="step-email-signup">
                             <h4>Career Selection & Planning</h4>
                             <p> Find your best-fit career, stream, course or college through advanced assessments and expert guidance.
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="user-selection zoom" id="step-form-stu" onclick="googleEvent('Query Submitted','Homepage','Student: College Application','')">
-                            <h4>college applications</h4>
-                            <p>Get admits from your dream colleges through end-to-end applications guidance for overseas and liberal arts universities.
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
                 <a class="back to-main"><i class="fa fa-angle-left"></i>Go back</a>
             </div>
             <div class="set-item institution-selection" id="institution-step-two">
                 <h3>I am interested in</h3>
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row" >
+                    <div class="col-sm-6" style="margin-left: 170px;">
                         <div class="user-selection zoom" id="step-form-cdp" onclick="googleEvent('Query Submitted','Homepage','Institution: Career Development Program','')">
-                            <h4>Career Development Programs</h4>
-                            <p>State-of-the-art career assessments, expert guidance, and more to help students plan their career paths.
+                            <h4>Role of Parents and Support</h4>
+                            <p>
+                                State-of-the-art assessment & end-to-end AI Based career guidance to help students discover their perfect career.
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="user-selection zoom" id="step-form-cap" onclick="googleEvent('Query Submitted', 'Homepage','Institution: Career Advancement Program','');">
-                            <h4>Career Advancement Programs</h4>
-                            <p>Expert-led MUN training programs, inspirational career talks and more to help students get that added edge.
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
                 <a class="back to-main"><i class="fa fa-angle-left"></i>Go back</a>
             </div>
-            <div class="set-item professional-selection" id="professional-step-two">
-                <h3>I am interested in</h3>
-                <div class="row">
-                    <a href="https://www.mindler.com/iccc" target="_blank">
-                        <div class="col-sm-6">
-                            <!-- id="step-iccc" -->
-                            <div class="user-selection zoom" onclick="googleEvent('Email Only Signup', 'Homepage','Professional: Getting Certified (ICCC)','');">
-                                <h4>Getting Certified (ICCC) </h4>
-                                <p>Become an International Certified Career Coach through a multi-level credentialing program by Mindler & CDA (USA).
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.mindler.com/partner/partner-registration" target="_blank">
-                        <div class="col-sm-6">
-                            <div class="user-selection zoom" id="" onclick="googleEvent('Query Submitted', 'Homepage','Career Professional: Partnering Mindler','');">
-                                <h4>Partnering with Mindler</h4>
-                                <p>Expand and grow your career counselling practice by leveraging the full force of Mindler’s career guidance platform.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <a class="back to-main"><i class="fa fa-angle-left"></i>Go back</a>
-            </div>
+            
             <!-- school  -->
             <div class="set-item " id="step-email-signup-section">
                 <h3 class="title">Ready to discover your perfect career? </h3>
@@ -321,30 +282,20 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                     <div class="item content">
                         <div>
                             <h6>CAREER COUNSELLING PROGRAMS</h6>
+                            
                             <div class="products-details">
-                                <h4>Class 8-9</h4>
-                                <strong>Stream &amp; Subject Selection</strong>
-                                <p>Advanced assessment &amp; personalised guidance to help you select the perfect stream and subjects that align you to the right careers.
-                                </p>
-                            </div>
-                            <div class="products-details">
-                                <h4>Class 10-12</h4>
+                                <h4>Class 9-10</h4>
                                 <strong>Career Selection &amp; Planning</strong>
                                 <p>Expert guidance &amp; 5-dimensional assessment to help you discover your perfect career and choose the right course and college.
                                 </p>
                             </div>
-                            <div class="products-details">
-                                <h4>Graduates</h4>
-                                <strong>Career Selection &amp; Development</strong>
-                                <p>5-dimensional assessment &amp; superior guidance to help you discover your perfect career and choose the best next step.
-                                </p>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="item form-box ">
                         <div class="form-display">
                             <input type="email" data-source="Email Only" data-source-medium="Website" data-source-content="" data-source-description="Header" class="form-control" name="email" placeholder="Enter your email">
-                            <a href="#" onclick="googleEvent('Email Only Signup', 'Homepage','Get Started: Career Selection & Planning','');" class="btn-action btn-secondry">Take Free Demo</a>
+                            <a href="#" onclick="googleEvent('Email Only Signup', 'Homepage','Get Started: Career Selection & Planning','');" class="btn-action btn-secondry">Begin Test</a>
                         </div>
                         <div class="thankyou-display" style="display: none;">
                             <p style="font-weight:600">Thank you for contacting us!</p>
@@ -399,7 +350,7 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                         </div>
                         <div class="thankyou-display" style="display: none;">
                             <p style="font-weight:600">Thank you for contacting us!</p>
-                            <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                            <p>One of our team members will respond in 3-4 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
                         </div>
                     </div>
                 </div>
@@ -408,7 +359,7 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
             <!-- school  -->
             <!-- institution- -->
             <div class="set-item " id="step-form-section-cdp">
-                <h3 class="title">Ready to give students the best of career guidance? </h3>
+                <h3 class="title">Ready to give your child the best of career guidance? </h3>
                 <h4 class="title">Leave your details below and we will get in touch shortly. </h4>
                 <div class="form-with-content form-bg">
                     <div class="item content">
@@ -425,7 +376,7 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                     <div class="item form-box ">
                         <div class="form-display">
                             <form id="career-developement-programs">
-                                <input class="form-control text-cap" name="school" type="text" placeholder="School Name">
+                                <input class="form-control text-cap" name="school" type="text" placeholder="Your Name">
                                 <input class="form-control" name="email" type="email" placeholder="Email">
                                 <input class="form-control" name="mobile" type="text" placeholder="Contact">
                                 <textarea class="form-control" name="message" placeholder="Message" style="height:60px; resize: none"></textarea>
@@ -574,7 +525,8 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
         <div class="container">
             <div class="flex-box nav-header">
                 <div class="items for-menu">
-                    <a href="https://www.mindler.com/" class="mindler-logo">
+                    <a href="./" class="mindler-logo">
+                        <!-- https://www.ace-ai.org/ -->
                      <img src="./images/ACE-AI.png">
                   </a>
                     <span class="header-close">
@@ -587,21 +539,21 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                         <a onclick="googleEvent('Login', 'Homepage','Header',''); " href="https://www.mindler.com/login" class="text-link">Log In</a>
                     </div>
                     <ul class="top-nav">
+                        
                         <li class="for-students">
                             <span class="click">For Students</span>
                             <div class="top-menu-block">
-                                <span class="top-menu-close"> <img src="https://mindlerimages.imgix.net/home/user-close-black.svg"></span>
+                                <span class="top-menu-close"> <img src="./icons/close.png"></span>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-4 column-1">
+                                        <div class="col-md-4  column-1">
                                             <div class="for-products">
                                                 <h3 style="color: #0076cc;">Career Counselling</h3>
                                                 <div class="products-details">
-                                                    <a href="./counselling_page.html">
-                                                        <!-- https://www.ace-ai.org/career-counselling-for-class-10-11-and-12 -->
+                                                    <a href="./counselling_page.html" target="_blank">
                                                         <h4>Class 10-12</h4>
                                                         <strong>Career Selection &amp; Planning</strong>
-                                                        <p>Expert guidance &amp; 5-dimensional assessment to help you discover your perfect career and choose the right course and college.
+                                                        <p>AI Based Career Guidance to help you discover your perfect career stream and choose the right course.
                                                         </p>
                                                         <div onclick="googleEvent('Program Details', 'Homepage','Students: Class 10-12','');" class="link">View Program Details
                                                             <i class="fa fa-angle-right"></i>
@@ -610,13 +562,18 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4  column-2">
+                                        <div class="col-md-4 column-1">
+                                            <div class="for-products">
+                    
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 column-2">
                                             <div class="for-contact">
                                                 <div class="address-box">
                                                     <div class="contact-details">
-                                                        <p><a href="tel:+910000000000" style="font-size: 14px;color: #484848;"><img src="./icons/call.png" style="top: 0;">+91 00000 00000</a></p>
+                                                        <p><a href="tel:+918744987449" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 00000 00000</a></p>
                                                     </div>
-                                                    <p class="send-message"><img src="./icons/msg.png">Send a Message</p>
+                                                    <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
                                                     <div class="thankyou-display" style="display: none;">
                                                         <p style="font-weight:600">Thank you for contacting us!</p>
                                                         <p>One of our team members will respond in 3-4 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
@@ -646,21 +603,22 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                                 </div>
                             </div>
                         </li>
-                        <li class="for-institutions">
-                            <span class="click">For Institutions</span>
+                        <li class="for-parents">
+                            <span class="click">For Parents</span>
                             <div class="top-menu-block">
-                                <span class="top-menu-close"> <img src="https://mindlerimages.imgix.net/home/user-close-black.svg"></span>
+                                <span class="top-menu-close"> <img src="./icons/close.png"></span>
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-4  column-1">
                                             <div class="for-products">
-                                                <h6>Career Development Programs</h6>
+                                                <h3 style="color: #0076cc;">Why Career Counselling is Important?</h3>
                                                 <div class="products-details">
-                                                    <a href="https://www.mindler.com/schools" target="_blank">
-                                                        <h4>In School Career Guidance</h4>
-                                                        <p>State-of-the-art assessment & end-to-end career guidance to help students discover their perfect career.
+                                                    <a href="./letter_to_parents.html" target="_blank">
+                                                        <h4>Class 10-12</h4>
+                                                        <strong>Role of Parents and Support</strong>
+                                                        <p>State-of-the-art assessment & end-to-end AI Based career guidance to help students discover their perfect career.
                                                         </p>
-                                                        <div onclick="googleEvent('Program Details', 'Homepage','Institutions: In School','');" class="link">View Program Details
+                                                        <div onclick="googleEvent('Program Details', 'Homepage','Students: Class 10-12','');" class="link">A Letter to Parents
                                                             <i class="fa fa-angle-right"></i>
                                                         </div>
                                                     </a>
@@ -669,42 +627,19 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                                         </div>
                                         <div class="col-md-4 column-1">
                                             <div class="for-products">
-                                                <h6>career advancement Programs</h6>
-                                                <div class="products-details">
-                                                    <a href="https://www.mindler.com/mun-training-program">
-                                                        <h4> MUN Training Program
-                                                        </h4>
-                                                        <p>
-                                                            Expert-led training and comprehensive guidance sessions to help students excel at MUN conferences.
-                                                        </p>
-                                                        <div onclick="googleEvent('Program Details', 'Homepage','Institutions:MUN','');" class="link">View Program Details
-                                                            <i class="fa fa-angle-right"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="products-details">
-                                                    <a href="https://www.mindler.com/mindler-talks-program">
-                                                        <h4>Mindler Talks
-                                                        </h4>
-                                                        <p>Career awareness and inspirational talks for students with professionals who have achieved success in their fields.
-                                                        </p>
-                                                        <div onclick="googleEvent('Program Details', 'Homepage','Institutions: Mindler Talks','');" class="link">View Program Details
-                                                            <i class="fa fa-angle-right"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
+                    
                                             </div>
                                         </div>
                                         <div class="col-md-4 column-2">
                                             <div class="for-contact">
                                                 <div class="address-box">
                                                     <div class="contact-details">
-                                                        <p><a href="tel:+918744987449" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 87449 87449</a></p>
+                                                        <p><a href="tel:+918744987449" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 00000 00000</a></p>
                                                     </div>
                                                     <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
                                                     <div class="thankyou-display" style="display: none;">
                                                         <p style="font-weight:600">Thank you for contacting us!</p>
-                                                        <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                                                        <p>One of our team members will respond in 3-4 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
                                                     </div>
                                                     <div class="contact-form">
                                                         <div class="form-box ">
@@ -722,8 +657,8 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                                                     </div>
                                                 </div>
                                                 <div class="link-box">
-                                                    <p><a href="https://www.mindler.com/success-stories" class="text-link">Success Stories</a> </p>
-                                                    <p><a href="https://www.mindler.com/about-us" class="text-link">About Us</a></p>
+                                                    <p><a href="web\about-us.html" class="text-link">About Us</a></p>
+                                                    <!-- https://www.ace-ai.org/about-us -->
                                                 </div>
                                             </div>
                                         </div>
@@ -731,217 +666,7 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                                 </div>
                             </div>
                         </li>
-                        <li class="for-career">
-                            <span class="click">For Career Professionals</span>
-                            <div class="top-menu-block">
-                                <span class="top-menu-close"> <img src="https://mindlerimages.imgix.net/home/user-close-black.svg"></span>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4 column-1">
-                                            <div class="for-products">
-                                                <h6>certification Programs</h6>
-                                                <div class="products-details">
-                                                    <a href="https://www.mindler.com/iccc">
-                                                        <h4> International Certified Career Coach (ICCC)
-                                                        </h4>
-                                                        <p>A 3-level credentialing program with emphasis on global best practices, experiential learning & state-of-the-art tools.
-                                                        </p>
-                                                        <div onclick="googleEvent('Program Details', 'Homepage','ICCC','');" class="link">View Program Details
-                                                            <i class="fa fa-angle-right"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 column-1">
-                                            <div class="for-products">
-                                                <h6>collaboration</h6>
-                                                <div class="products-details">
-                                                    <a href="https://www.mindler.com/partner">
-                                                        <h4>Mindler Partner Program
-                                                        </h4>
-                                                        <p>
-                                                            World-class career assessment platform & tools to help you scale up your career counselling practice.
-                                                        </p>
-                                                        <div onclick="googleEvent('Program Details', 'Homepage','Partner','');" class="link">View Program Details
-                                                            <i class="fa fa-angle-right"></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 column-2">
-                                            <div class="for-contact">
-                                                <div class="address-box">
-                                                    <div class="contact-details">
-                                                        <p><a href="tel:+918744987449" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 87449 87449</a></p>
-                                                    </div>
-                                                    <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
-                                                    <div class="thankyou-display" style="display: none;">
-                                                        <p style="font-weight:600">Thank you for contacting us!</p>
-                                                        <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
-                                                    </div>
-                                                    <div class="contact-form">
-                                                        <div class="form-box ">
-                                                            <form id="send-a-message">
-                                                                <input class="form-control text-cap" name="name" type="text" placeholder="Name">
-                                                                <input class="form-control" name="email" type="email" placeholder="Email">
-                                                                <input class="form-control" name="contact" type="text" placeholder="Contact Number">
-                                                                <textarea class="form-control" name="comment" placeholder="Message" style="height:80px; resize: none"></textarea>
-                                                                <div class="text-right">
-                                                                    <a href="#" class="btn-action btn-default">Cancel</a>
-                                                                    <a href="javascript:void(0)" class="btn-action btn-secondry">Submit</a>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="link-box">
-                                                    <p><a href="https://www.mindler.com/success-stories" onclick="googleEvent('Program Details', 'Homepage','Success Stories','');" class="text-link">Success Stories</a> </p>
-                                                    <p><a href="https://www.mindler.com/about-us" onclick="googleEvent('Program Details', 'Homepage','About Us','');" class="text-link">About Us</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="click">Resources</span>
-                            <div class="top-menu-block">
-                                <span class="top-menu-close"> <img src="https://mindlerimages.imgix.net/home/user-close-black.svg"></span>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-3 column-1 resources-career-library">
-                                            <div class="for-products">
-                                                <div class="products-details resources">
-                                                    <h4> Career Library</h4>
-                                                    <p>Everything you need to know, from colleges to scope, for hundreds of careers. </p>
-                                                    <div class="link view-career-btn"><a href="https://www.mindler.com/careerlibrary">View All Careers</a>
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </div>
-                                                    <div class="row cl-links">
-                                                        <div class="col-md-12">
-                                                            <ul class="">
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/actuarial-sciences">Actuarial Sciences </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/allied-medicine">Allied Medicine </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/animation-graphics">Animation & Graphics </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/applied-arts">Applied Arts </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/architecture">Architecture </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/aviation">Aviation </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/cabin-crew">Cabin Crew </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/civil-services">Civil Services </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/commerce-accounts">Commerce & Accounts </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/computer-application-it">Computer Application & IT </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/data-science-artificial-intelligence">Data Science & Artificial Intelligence </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/defense">Defense</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/design">Design</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary/economics">Economics</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://www.mindler.com/careerlibrary" style="color:#0076cc;font-size: 13px ">View All Careers<i class="fa fa-angle-right" style="margin-left:3px"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 column-1">
-                                            <div class="for-products">
-                                                <div class="products-details resources">
-                                                    <h3>
-                                                        <span class="heading-sub-title">Blog </span>
-                                                        <span class="heading-sub-description">- Expert-written articles on all things career - trends, inspiration and guidance.</span>
-                                                    </h3>
-                                                    <div class="blog-box-sec" id="header-blog">
-                                                    </div>
-                                                </div>
-                                                <div class="products-details resources">
-                                                    <h3>
-                                                        <span class="heading-sub-title">Vlog</span>
-                                                        <span class="heading-sub-description"> - Audio-visual journal of careers by experts</span>
-                                                    </h3>
-                                                    <div class="blog-box-sec" id="header-vlog">
-                                                        <div class="blog-box">
-                                                            <a target="_blank" href="https://youtu.be/swWV7fxIKio" class="blog-box-link">
-                                                <img width="100%" src="https://www.mindler.com/vlog/wp-content/uploads/2021/07/Career-in-Product-Design-in-India-Everything-You-Need-to-Know.jpg" loading="lazy">
-                                             </a>
-                                                        </div>
-                                                        <div class="blog-box">
-                                                            <a target="_blank" href="https://youtu.be/PCYafdS9hDU" class="blog-box-link">
-                                                <img width="100%" src="https://mindlerimages.imgix.net/tinyimg/Liberal-Arts-The-New-Chapter-in-Indian-Education-2021_new.webp" loading=" lazy">
-                                             </a>
-                                                        </div>
-                                                        <div class="blog-box-view"><a target="_blank" href="https://www.mindler.com/vlog">View All Vlogs<i class="fa fa-angle-right" style="margin-left:3px"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 column-2">
-                                            <div class="for-contact">
-                                                <div class="address-box">
-                                                    <div class="contact-details">
-                                                        <p><a href="tel:+918744987449" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 87449 87449</a></p>
-                                                    </div>
-                                                    <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
-                                                    <div class="thankyou-display" style="display: none;">
-                                                        <p style="font-weight:600">Thank you for contacting us!</p>
-                                                        <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
-                                                    </div>
-                                                    <div class="contact-form">
-                                                        <div class="form-box ">
-                                                            <form id="send-a-message">
-                                                                <input class="form-control text-cap" name="name" type="text" placeholder="Name">
-                                                                <input class="form-control" name="email" type="email" placeholder="Email">
-                                                                <input class="form-control" name="contact" type="text" placeholder="Contact Number">
-                                                                <textarea class="form-control" name="comment" placeholder="Message" style="height:80px; resize: none"></textarea>
-                                                                <div class="text-right">
-                                                                    <a href="#" class="btn-action btn-default">Cancel</a>
-                                                                    <a href="javascript:void(0)" class="btn-action btn-secondry">Submit</a>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="link-box">
-                                                    <p><a href="https://www.mindler.com/success-stories" onclick="googleEvent('Program Details', 'Homepage','Success Stories','');" class="text-link">Success Stories</a> </p>
-                                                    <p><a href="https://www.mindler.com/about-us" onclick="googleEvent('Program Details', 'Homepage','About Us','');" class="text-link">About Us</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        
                     </ul>
                     <div class="for-contact for-mobile">
                         <div class="address-box">
@@ -982,186 +707,102 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
         <div class="homepage-display new-homepage-display">
             </div>
             <div class="container">
-                <div class="center-box">
-                    <h1>Discover Your </br>Perfect Career</h1>
+                <div class="center-box" style="margin-top: 20px;">
+                    <h1>Discover Your Perfect Career</h1>
                     <p>
-                        Make smart decisions with our revolutionary AI enabled career guidance tools and expert career counsellors
+                        Make smart decisions with our revolutionary AI enabled career guidance
                     </p>
 
-                    <div style="margin: auto;display: inline-block;" class="home-set new-home-set">
-                        <!-- <input type="email" data-source="Email Only" data-source-medium="Homepage" data-source-content="Homepage" data-source-description="CoverImage" data-id="Home" name="email" id="signUpByEmail" value="" placeholder="Enter your email" /> -->
-                        <a href="https://dashboard.mindler.com/onboarding?utm_lead_source=Home Page Cover image" onclick="googleEvent('Email Only Sign Up', 'Homepage', 'Hero Image',''); trackUserEvents('Get Started Button', 'Homepage','Center','','');" id="startNow">Get Started</a>
-                    </div>
+                    
                     <div>
-                        <h6>Career Assessment | Personalised Guidance | Profile Building | Virtual Internships | <br> College Roadmap Planning | College Applications | Scholarship Hunt</h6>
+                        <h6 style="margin-top: 12px;">Career Assessment | Personalised Guidance through Generated Report</h6>
                     </div>
                     <!-- <span style="display: block;margin-top: 18px;font-size: 12px;"><span style="color: red">New!</span>  Applications for International Certified Career Coach (ICCC) - Cohort 3 are now open. <a href='https://www.mindler.com/iccc' target="_blank">Know More <i class="fa fa-angle-right" style="font-size: 13px;"></i></a></span> -->
                     <!--  <span style="display: block;margin-top: 18px;font-size: 12px;"><span style="color: red">Independence Day Offer!</span>  Mindler Career Guidance programs starting at INR 1947 only. <a href='https://www.mindler.com/pricing?tag=stream' target="_blank">Know More <i class="fa fa-angle-right" style="font-size: 13px;"></i></a></span> -->
                 </div>
-                <div class="home-banner-mindler new-homepage-display ">
-                    <img src="https://mindlerimages.imgix.net/tinyimg/desktop.svg" loading="lazy" alt="banner" class="img-fluid hidden-sm hidden-xs">
-                    <img src="https://mindlerimages.imgix.net/tinyimg/LP%20image-04_new.png" loading="lazy" alt="banner" class="img-fluid hidden-lg hidden-md">
-                </div>
-
-                <!-- <div class="col-md-6">
-         <img src="https://mindlerimages.imgix.net/tinyimg/desktop-01.png" alt="" class="img-fluid">
-         </div> -->
-            </div> -->
-        </div>
-        <!-- The Modal -->
-        <!-- <div class="modal" id="festive-modal">
-               <div class="modal-dialog">
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <img src="https://mindlerimages.imgix.net/tinyimg/mobile+lantern.svg" alt="" class="img-fluid">
-                              <h4 class="modal-title">Festive Offers!</h4>
-                              <button type="button" class="close" data-dismiss="modal"></button>
-                              <img src="https://mindlerimages.imgix.net/tinyimg/mobile+lantern.svg" alt="" class="img-fluid">
-                           </div>
-                           <div class="modal-body">
-                              <div class="stuent-offer-sec">
-                                 <div class="mindler-festive">
-                                    <img src="https://mindlerimages.imgix.net/tinyimg/three-marigolds.svg" alt="" class="img-fluid marigolds-left">
-                                          <p class="festival-offers-title">Students</p>
-                                    <img src="https://mindlerimages.imgix.net/tinyimg/three-marigolds.svg" alt="" class="img-fluid marigolds-right">
-                                 </div>
-                                 <div class="row festive-student-offer">
-                                    <div class="col-md-6 col-xs-12 offers-desc">
-                                       <a href="https://www.mindler.com/pricing" target="_blank">
-                                          <img src="https://mindlerimages.imgix.net/iccc_new/mindlerrCelebrate.png" alt="" class="img-fluid">
-                                       </a>
-                                    </div>
-                                    <div class="col-md-6 col-xs-12 offers-desc">
-                                       <a href="https://immrse.mindler.com/" target="_blank">
-                                          <img src="https://mindlerimages.imgix.net/iccc_new/mindlerVipImmrse.png" alt="" class="img-fluid">
-                                       </a>
-                                    </div>
-                                    <div class="col-md-6 col-xs-12 offers-desc">
-                                       <a href="https://ce.mindler.com/payment" target="_blank">
-                                          <img src="https://mindlerimages.imgix.net/iccc_new/mindlerVipPuma.png" alt="" class="img-fluid">
-                                       </a>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="stuent-offer-sec">
-                                 <div class="mindler-festive">
-                                    <img src="https://mindlerimages.imgix.net/tinyimg/three-marigolds.svg" alt="" class="img-fluid marigolds-left">
-                                          <p class="festival-offers-title">ICCC</p>
-                                    <img src="https://mindlerimages.imgix.net/tinyimg/three-marigolds.svg" alt="" class="img-fluid marigolds-right">
-                                 </div>
-                                 <div class="row festive-student-offer">
-                                    <div class="col-md-6 col-xs-12 offers-desc">
-                                    <a href="https://www.mindler.com/iccc" target="_blank">
-                                       <img src="https://mindlerimages.imgix.net/iccc_new/iccMindlerr.png" alt="" class="img-fluid">
-                                    </a>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="stuent-offer-sec">
-                                 <div class="mindler-festive">
-                                    <img src="https://mindlerimages.imgix.net/tinyimg/three-marigolds.svg" alt="" class="img-fluid marigolds-left">
-                                          <p class="festival-offers-title">Partner</p>
-                                    <img src="https://mindlerimages.imgix.net/tinyimg/three-marigolds.svg" alt="" class="img-fluid marigolds-right">
-                                 </div>
-                                 <div class="row festive-student-offer">
-                                    <div class="col-md-6 col-xs-12 offers-desc">
-                                    <a href="https://www.mindler.com/partner" target="_blank">
-                                       <img src="https://mindlerimages.imgix.net/iccc_new/mindlerPartnerDiscount.png" alt="" class="img-fluid">
-                                    </a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                <br>
+                <div id="homeBannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-wrap="true" style="margin-top: 20px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#homeBannerCarousel" data-bs-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/homepage_img1.png" class="d-block w-100 carousel-img" alt="banner 1">
                         </div>
-                  </div>
-         </div> -->
-        <!-- The Modal -->
-        <section id="impact" style="background: #CDEFFF;">
+                        <div class="carousel-item">
+                            <img src="./images/homepage_img2.png" class="d-block w-100 carousel-img" alt="banner 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Mission.png" class="d-block w-100 carousel-img" alt="banner 3">
+                        </div>
+                    </div>
+                
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#homeBannerCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeBannerCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+                
+                <!-- Custom CSS to Fix Image Size -->
+                <style>
+                    .carousel-img {
+                        height: 520px; /* Fixed height */
+                        object-fit: cover; /* Uniform image display */
+                    }
+                
+                    /* Responsive Adjustments */
+                    @media (max-width: 768px) {
+                        .carousel-img {
+                            height: 250px;
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+        
+        <section id="impact" style="background: #CDEFFF; margin-top: 30px;">
             <div class="container">
                 <div class="row">
+                    <marquee>
                     <div class="col-md-3 col-sm-6 col-xs-6 impact__wrap">
                         <img src="https://mindlerimages.imgix.net/tinyimg/Group%201310.svg" alt="Group" class="img-fluid">
                         <div class="impact__numbers">
-                            <h2>2.5 Million </h2>
-                            <h6>Students Impacted</h6>
+                            <h2>25 K+ </h2>
+                            <h6>Active Students</h6>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6 impact__wrap">
                         <img src="https://mindlerimages.imgix.net/tinyimg/Group%201311.svg" alt="Group" class="img-fluid">
                         <div class="impact__numbers">
-                            <h2>60,000 </h2>
-
-                            <h6>Educators Certified</h6>
+                            <h2>899 </h2>
+                            <h6>Total Courses</h6>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6 impact__wrap">
                         <img src="https://mindlerimages.imgix.net/tinyimg/Group%201312.svg" alt="Group" class="img-fluid">
                         <div class="impact__numbers">
-                            <h2>250+</h2>
-                            <h6>Partner Schools</h6>
+                            <h2>158</h2>
+                            <h6>Instructors</h6>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6 impact__wrap">
                         <img src="https://mindlerimages.imgix.net/tinyimg/Group%201313.svg" alt="Group" class="img-fluid">
                         <div class="impact__numbers">
-                            <h2>50+</h2>
-                            <h6>University Partners</h6>
+                            <h2>100%</h2>
+                            <h6>Satisfaction Rate</h6>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="awards" style="background:#fff">
-            <div class="container" style="text-align:center">
-                <h6>Awards and Recognition</h6>
-                <div class="row">
-                    <div class="col-md-12" style="padding: 0;">
-                        <!-- <div class="row award-icons">
-               <img src="https://mindlerimages.imgix.net/tinyimg/powerofideas.png" class="powerofideas"/>
-                <img src="https://mindlerimages.imgix.net/tinyimg/apcda.png" class="apcda"/> 
-               <img src="https://mindlerimages.imgix.net/tinyimg/isb.png" class="isb"/>
-               <img src="https://mindlerimages.imgix.net/tinyimg/dstgi.png" class="dst"/>
-               <img src="https://mindlerimages.imgix.net/tinyimg/ha-1.png" class="ciie"/>
-                <img src="https://mindlerimages.imgix.net/tinyimg/ha-2.png" class="ncda"/> 
-               <img src="https://mindlerimages.imgix.net/tinyimg/ha-3.png" class="afi"/>
-               </div> -->
-                        <div class="col-md-2 col-sm-6 col-xs-6 award-name-wrapper">
-                            <img src="https://mindlerimages.imgix.net/tinyimg/left.svg" alt="Left" class="img-fluid">
-                            <p>Department of <br> Science & Technology; <br> Goverment of India
-                            </p>
-                            <img src="https://mindlerimages.imgix.net/tinyimg/right.svg" alt="Right" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-6 award-name-wrapper">
-                            <img src="https://mindlerimages.imgix.net/tinyimg/left.svg" alt="Left" class="img-fluid">
-                            <p>Minister of State,<br> UAE Government
-                            </p>
-                            <img src="https://mindlerimages.imgix.net/tinyimg/right.svg" alt="Right" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-6 award-name-wrapper">
-                            <img src="https://mindlerimages.imgix.net/tinyimg/left.svg" alt="Left" class="img-fluid">
-                            <p>Ministry of <br> Commerce & Industry,<br> DPIIT
-                            </p>
-                            <img src="https://mindlerimages.imgix.net/tinyimg/right.svg" alt="Right" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-6 award-name-wrapper">
-                            <img src="https://mindlerimages.imgix.net/tinyimg/left.svg" alt="Left" class="img-fluid">
-                            <p>Indian School of<br> Business, Hyderabad <br> & US Consulate
-                            </p>
-                            <img src="https://mindlerimages.imgix.net/tinyimg/right.svg" alt="Right" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-6 award-name-wrapper">
-                            <img src="https://mindlerimages.imgix.net/tinyimg/left.svg" alt="Left" class="img-fluid">
-                            <p>The Power of Ideas; <br> Economic Times <br> IIM-A, CIIE
-                            </p>
-                            <img src="https://mindlerimages.imgix.net/tinyimg/right.svg" alt="Right" class="img-fluid">
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-6 award-name-wrapper">
-                            <img src="https://mindlerimages.imgix.net/tinyimg/left.svg" alt="Left" class="img-fluid">
-                            <p>HolonIQ; <br> Top 100 Ed-Tech India <br> & South Asia
-                            </p>
-                            <img src="https://mindlerimages.imgix.net/tinyimg/right.svg" alt="Right" class="img-fluid">
-                        </div>
-                    </div>
+                    </marquee>
                 </div>
             </div>
         </section>
@@ -2368,919 +2009,6 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
                 </div>
             </div>
         </div>
-        <section id="partner-institution" class="" style="padding: 50px 0;">
-            <div class="container">
-                <div class="wrapper">
-                    <h2 class="text-center">Our Partner Institutions</h2>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#partnerschool">250+ Partner Schools</a></li>
-                        <li><a data-toggle="tab" href="#partneruni">50+ Partner Universities</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="partnerschool" class="tab-pane fade in active">
-                            <!-- <h3>HOME</h3> -->
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Welham_Girls'_School_logo.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Welham Girls' School, Dehradun</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/The%20hyderabad%20public%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Hyderabad Public School, Begumpet, Hyderabad</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/MayoGirlsCollege_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Mayo Girls College, Ajmer</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Punjab%20public%20school.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Punjab Public School, Nabha</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Gems_Academy.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>GEMS Modern Academy, Kochi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Greenwood%20High%20school_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Greenwood High School, Bannerghatta, Bengaluru</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/La%20Martiniere%20Lucknow_new.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>La Martiniere Girls College, Lucknow</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Scindia.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Scindia Kanya Vidyalaya, Gwalior</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/St.%20George's%20college_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>St George's College, Mussoorie</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/The_Doon_School,_Dehradun_-_logo_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>The Doon School, Dehradun</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/oxford_international.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>Oxford International School, Hoshiarpur, Punjab</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/GIIS%20Dubai.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                        <p>GEMS Our Own English High School Boys, Dubai</p>
-                                    </div>
-                                </div>
-                                <!-- <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="partnerschool-list">
-                           <img src="https://mindlerimages.imgix.net/tinyimg/DPSG%20Sushant%20Lok.svg" loading="lazy" class="img-fluid">
-                           <p>DPSG Sushant Lok, Gurugram</p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="partnerschool-list">
-                           <img src="https://mindlerimages.imgix.net/tinyimg/Delhi%20public%20school,%20Vasundhara.png" loading="lazy" class="img-fluid">
-                           <p>DPSG Vasundhra, Ghaziabad</p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="partnerschool-list">
-                           <img src="https://mindlerimages.imgix.net/tinyimg/Edubridge%20international%20school.jpg" loading="lazy" class="img-fluid">
-                           <p>Edubridge International School, Mumbai</p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="partnerschool-list">
-                           <img src="https://mindlerimages.imgix.net/tinyimg/GEMS%20modern%20academy.png" loading="lazy" class="img-fluid">
-                           <p>GEMS Modern Academy, Kochi</p>
-                        </div>
-                     </div> -->
-                            </div>
-                            <div class="text-center margin-top-15">
-                                <a href="#" data-toggle="modal" data-target="#myModalPartner">View More</a>
-                            </div>
-                            <div class="modal fade" id="myModalPartner" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Partner Schools</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Welham_Girls'_School_logo.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Welham Girls' School, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/The%20hyderabad%20public%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Hyderabad Public School, Begumpet, Hyderabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/MayoGirlsCollege_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Mayo Girls College, Ajmer</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Punjab%20public%20school.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Punjab Public School, Nabha</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Gems_Academy.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>GEMS Modern Academy, Kochi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Greenwood%20High%20school_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Greenwood High School, Bannerghatta, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/La%20Martiniere%20Lucknow_new.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>La Martiniere Girls College, Lucknow</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Scindia.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Scindia Kanya Vidyalaya, Gwalior</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/St.%20George's%20college_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>St George's College, Mussoorie</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/The_Doon_School,_Dehradun_-_logo_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>The Doon School, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/oxford_international.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Oxford International School, Hoshiarpur, Punjab</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/GIIS%20Dubai.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>GEMS Our Own English High School Boys, Dubai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Welham%20boys%20school.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Welham Boys' School, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/oeau89l__400x400_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Yadavindra Public School, Patiala</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Jamnabai%20narsee%20International_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Jamnabai Narsee School, Mumbai</p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Presidency.webp" loading="lazy" class="img-fluid">
-                                                        <p>Presidency Group, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Lodha%20World%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Lodha Group, Mumbai</p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Suncity%20School.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Suncity School, Gurugram</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Don%20Bosco.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Don Bosco International School, Mumbai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/GIIS%20Singapore.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Global Indian International School, Multiple Countries</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Velammal%20international%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Velammal International School, Chennai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Gyanshree-School-Sector-127-Noida_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Gyanshree School, Noida</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Edubridge%20international%20school.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Edubridge International School, Mumbai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Springdales%20dubai.png?fm=png&auto=format&lossless=1v" loading="lazy" class="img-fluid">
-                                                        <p>Springdales Dubai, Dubai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Kunskappsskolan_new.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Kunskappskolan, Gurugram</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Modern%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>The Modern School, Kundli, New Delhi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/SelaQui.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>SelaQui International School, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Scholars%20global%20school_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Scholars Global School, Delhi NCR</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/NAFL-Bangalore_new_new.webp" loading="lazy" class="img-fluid">
-                                                        <p>National Academy for Learning, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Heritage%20girls%20school_new.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Heritage Girls School, Udaipur</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Delhi%20public%20school%20-%20international_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>DPSG International, Ghaziabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/DPSG%20Dehradun.svg" loading="lazy" class="img-fluid">
-                                                        <p>DPSG Dehradun, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Laxmipath%20singhania.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Laxmipath Singhania Academy, Kolkata</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/DPSG%20Palam%20Vihar_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>DPSG Palam Vihar, Gurugram</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/DPSG%20Sushant%20Lok.svg" loading="lazy" class="img-fluid">
-                                                        <p>DPSG Sushant Lok, Gurugram</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/DPS_Vasundhara.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>DPSG Vasundhra, Ghaziabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/alpine-public-school.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Alpine Public School, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Army%20public%20school_new_new.webp" loading="lazy" class="img-fluid">
-                                                        <p>Army Public School, Shankar Vihar, New Delhi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Rockwell%20International.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Rockwell International School, Hyderabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Deccan%20international%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Deccan International School, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Pathseekers.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Pathseekers School, Beas</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/gyananda-logo_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Gyananda School for Girls', Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Rockwoods-High-School-Udaipur_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Rockwoods High School, Udaipur</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Bodhi%20international_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Bodhi International School, Jodhpur</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Seth%20anandram%20school.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Seth Anandram Jaipuria Group, Multiple</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/The-Asian-school-logo_new.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>The Asian School, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Brahmavid_new_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Brahmavid The Global School, Raipur</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/DPS%20-%20Raj%20nagar%20ext_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>DPS Rajnagar Extension, Ghaziabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Pacific%20world%20school.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Pacific World School, Greater Noida</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Akal%20Academy.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Akal Academy, Baru Sahib</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Ira%20Global%20school_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Ira Global School, Dombivli</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Shishi-Griha-Montessori_new_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Sishu Griha School, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/MAMS%20Logo_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Maa Anandmayee Memorial School, Haridwar</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/St._Columba's_new.webp" loading="lazy" class="img-fluid">
-                                                        <p>St Columba's School, New Delhi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Avalon%20heights.jpeg?fm=jpeg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Avalon Heights International School, Navi Mumbai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/PPS_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Pristine Private School, Dubai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Meru%20Int.jpg?fm=jpg&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Meru International, Hyderabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/ThePremiaAcademy_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>The Premia Academy, Hyderabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/SanskritiSchool_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Sanskriti School, Delhi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/DALIMSSSunbeamSchool_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>DALIMSS Sunbeam School, Varanasi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Valistus-International-School-Logo-1.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Valistus International School, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/CambridgeInternationalSchool_new.png?fm=png&auto=format&lossless=1" loading="lazy" class="img-fluid">
-                                                        <p>Cambridge International School, Amritsar</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list partnerschool-list-end">
-                                                        <p>...And many more!</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Modal Close -->
-                        </div>
-                        <div id="partneruni" class="tab-pane fade">
-                            <!-- <h3>Menu 1</h3> -->
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Acharya_Logo1.png?fm=png&auto=format&lossless=1" alt="Acharya Logo" class="img-fluid">
-                                        <p>Acharya Institues, Bengaluru</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Ahmedabad%20University%20.png?fm=png&auto=format&lossless=1" alt="Ahmedabad University" class="img-fluid">
-                                        <p>Ahmedabad University, Ahmedabad</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Alliance%20University_new.png?fm=png&auto=format&lossless=1" alt="Alliance University" class="img-fluid">
-                                        <p>Alliance University, Bengaluru</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Amity%20University.jpeg?fm=jpeg&auto=format&lossless=1" alt="Amity University" class="img-fluid">
-                                        <p>Amity Univesity, Multiple Campus</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Amrita.png?fm=png&auto=format&lossless=1" alt="Amrita" class="img-fluid">
-                                        <p>Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Atria%20University.png?fm=png&auto=format&lossless=1" alt="Atria University" class="img-fluid">
-                                        <p>Atria University, Bangalore</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/AURO-Surat-Gujarat_LOGO_Aug2023.webp" alt="Auro Surat Gujarat Logo" class="img-fluid">
-                                        <p>Auro University</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/Bennet_new.png?fm=png&auto=format&lossless=1" alt="Bennet" class="img-fluid">
-                                        <p>Bennett University, Greater Noida</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/BMLMunjal_new.png?fm=png&auto=format&lossless=1" alt="Bmlmunjal" class="img-fluid">
-                                        <p>BML Munjal University, Gurgaon</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/FLAME%20logo_new.png?fm=png&auto=format&lossless=1" alt="Flame Logo" class="img-fluid">
-                                        <p>FLAME University, Pune</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/GD%20Goenka_new.png?fm=png&auto=format&lossless=1" alt="Gd Goenka" class="img-fluid">
-                                        <p>GD Goenka University, Sohna Road, Gurugram</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="partnerschool-list">
-                                        <img src="https://mindlerimages.imgix.net/tinyimg/ICFAI%20Group%20Logo%20with%20R%20mark_new.webp" alt="Icfai Group Logo" class="img-fluid">
-                                        <p>ICFAI Group</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center margin-top-15">
-                                <a href="#" data-toggle="modal" data-target="#myModalPartnerTwo">View More</a>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModalPartnerTwo" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Partner Universities</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Acharya_Logo1.png?fm=png&auto=format&lossless=1" alt="Acharya Logo" class="img-fluid">
-                                                        <p>Acharya Institues, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Ahmedabad%20University%20.png?fm=png&auto=format&lossless=1" alt="Ahmedabad University" class="img-fluid">
-                                                        <p>Ahmedabad University, Ahmedabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Alliance%20University_new.png?fm=png&auto=format&lossless=1" alt="Alliance University" class="img-fluid">
-                                                        <p>Alliance University, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Amity%20University.jpeg?fm=jpeg&auto=format&lossless=1" alt="Amity University" class="img-fluid">
-                                                        <p>Amity Univesity, Multiple Campus</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Amrita.png?fm=png&auto=format&lossless=1" alt="Amrita" class="img-fluid">
-                                                        <p>Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Atria%20University.png?fm=png&auto=format&lossless=1" alt="Atria University" class="img-fluid">
-                                                        <p>Atria University, Bangalore</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/AURO-Surat-Gujarat_LOGO_Aug2023.webp" alt="Auro Surat Gujarat Logo" class="img-fluid">
-                                                        <p>Auro University</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Bennet_new.png?fm=png&auto=format&lossless=1" alt="Bennet" class="img-fluid">
-                                                        <p>Bennett University, Greater Noida</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/BMLMunjal_new.png?fm=png&auto=format&lossless=1" alt="Bmlmunjal" class="img-fluid">
-                                                        <p>BML Munjal University, Gurgaon</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/FLAME%20logo_new.png?fm=png&auto=format&lossless=1" alt="Flame Logo" class="img-fluid">
-                                                        <p>FLAME University, Pune</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/GD%20Goenka_new.png?fm=png&auto=format&lossless=1" alt="Gd Goenka" class="img-fluid">
-                                                        <p>GD Goenka University, Sohna Road, Gurugram</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/ICFAI%20Group%20Logo%20with%20R%20mark_new.webp" alt="Icfai Group Logo" class="img-fluid">
-                                                        <p>ICFAI Group</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/IIHM.png?fm=png&auto=format&lossless=1" alt="Iihm" class="img-fluid">
-                                                        <p>IIHM (International Institute Of Hotel Management), Badarpur, Delhi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/ICSI_Logo.jpg?fm=jpg&auto=format&lossless=1" alt="Icsi Logo" class="img-fluid">
-                                                        <p>Institute of Company Secretaries of India (ICSI), Delhi</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Instituto%20Morangoni.png?fm=png&auto=format&lossless=1" alt="Instituto Morangoni" class="img-fluid">
-                                                        <p>Istituto Marangoni, Mumbai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Jagran%20Lake%20University_new.jpg?fm=jpg&auto=format&lossless=1" alt="Jagran Lake University" class="img-fluid">
-                                                        <p>Jagran Lakecity University, Bhopal</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/JKLULogoColor.webp" alt="Jklu Logo Color" class="img-fluid">
-                                                        <p>JK Lakshmipat University, Jaipur</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/KarnavatiUniversityLogo_new.webp" alt="Karnavatiuniversitylogo" class="img-fluid">
-                                                        <p>Karnavati University, Ahmedabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Kit.webp" alt="Kit" class="img-fluid">
-                                                        <p>KIIT University</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/KREA%20Univ_new.jpg?fm=jpg&auto=format&lossless=1" alt="Krea Univ" class="img-fluid">
-                                                        <p>KREA University, Chennai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Mahindra_University.png?fm=png&auto=format&lossless=1" alt="Mahindra University" class="img-fluid">
-                                                        <p>Mahindra University, Hyderabad</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/MAHE%20logo_new.jpg?fm=jpg&auto=format&lossless=1" alt="Mahe Logo" class="img-fluid">
-                                                        <p>Manipal Academy of Higher Education (MAHE)</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/McMaster%20University.svg" alt="Mcmaster University" class="img-fluid" style="width: 100%;">
-                                                        <p>McMaster University, Canada</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Monash_University_logo.webp" alt="Monash University Logo" class="img-fluid">
-                                                        <p>Monash University, Melbourne, Australia</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Nitte%20Meenakshi%20New%20Logo_Aug2023.webp" alt="Nitte Meenakshi" class="img-fluid">
-                                                        <p>NITTE Meenakshi Institute of Technology (NMIT)</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/OP%20Jindal.jpg?fm=jpg&auto=format&lossless=1" alt="Op Jindal" class="img-fluid">
-                                                        <p>OP Jindal Global University, Sonepat, Haryana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Parul%20Univ_new.png?fm=png&auto=format&lossless=1" alt="Parul Univ" class="img-fluid">
-                                                        <p>Parul University, Vadodra, Gujrat</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/logo_Pearl.svg" alt="Logo Pearl" class="img-fluid">
-                                                        <p>Pearl Academy, Multiple Campus</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/QueensLogo_colour.png?fm=png&auto=format&lossless=1" alt="Queens Logo Colour" class="img-fluid">
-                                                        <p>Queen's University Canada, Ontario, Canada</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Rishihood-Logo_new.png?fm=png&auto=format&lossless=1" alt="Rishihood Logo" class="img-fluid">
-                                                        <p>Rishihood University, Sonepat, Haryana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Ryerson-rgb.png?fm=png&auto=format&lossless=1" alt="Ryerson Rgb" class="img-fluid">
-                                                        <p>Ryerson University, Toronto, Canada</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Sai%20University_new.jpg?fm=jpg&auto=format&lossless=1" alt="Sai University" class="img-fluid">
-                                                        <p>Sai University, Chennai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/ShivNadarUniv_new.webp" alt="Shiv Nadar University" class="img-fluid">
-                                                        <p>Shiv Nadar University, Greater Noida</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Shobhit_new.png?fm=png&auto=format&lossless=1" alt="Shobhit Deemed University" class="img-fluid">
-                                                        <p>Shobhit University, Meerut, UP</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/ShooliniUniversity.webp" alt="Shoolini University" class="img-fluid">
-                                                        <p>Shoolini University, Solan, Himachal Pradesh</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/SRM%20Chennai.png?fm=png&auto=format&lossless=1" alt="Srm Chennai" class="img-fluid">
-                                                        <p>SRM University, Chennai, Chennai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/SRM-Delhi-NCR-Sonepat_Aug2023.webp" alt="Srm Delhi ncr Sonepat" class="img-fluid">
-                                                        <p>SRM University, Delhi-NCR, Sonepat, Sonepat, Haryana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/St.%20George's%20University_new.png?fm=png&auto=format&lossless=1" alt="St. George's University" class="img-fluid">
-                                                        <p>St. George's University, Grenada, West Indies</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/TAPMI%20MAHE.jpg?fm=jpg&auto=format&lossless=1" alt="Tapmi Mahe" class="img-fluid">
-                                                        <p>TAPMI MAHE, Bengaluru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Trinity%20College%20Dublin_new.png?fm=png&auto=format&lossless=1" alt="Trinity College" class="img-fluid">
-                                                        <p>Trinity College Dublin, Dublin, Ireland</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/University_of_Bristol_logo_Aug2023.webp" alt="University Of Bristol Logo" class="img-fluid">
-                                                        <p>University of Bristol, United Kingdom</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Uni-Exeter-Logo.jpg?fm=jpg&auto=format&lossless=1" alt="Uni Exeter Logo" class="img-fluid">
-                                                        <p>University of Exeter, United Kingdom</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/UPES_new.png?fm=png&auto=format&lossless=1" alt="Upes" class="img-fluid">
-                                                        <p>University of Petroleum & Energy Studies, Dehradun</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Univ%20of%20Queensland_new.png?fm=png&auto=format&lossless=1" alt="University Of Queensland" class="img-fluid">
-                                                        <p>University of Queensland, Brisbane, Australia</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/University%20of%20Sydney_new.png?fm=png&auto=format&lossless=1" alt="University Of Sydney" class="img-fluid">
-                                                        <p>University of Sydney, Sydney, Australia</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/VIT_new.png?fm=png&auto=format&lossless=1" alt="Vellore Institue of Technology" class="img-fluid">
-                                                        <p>Vellore Institute of Technology, Multiple Campus</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Vidyashilp-University.png?fm=png&auto=format&lossless=1" alt="Vidyashilp University" class="img-fluid">
-                                                        <p>Vidyashilp University, Bangalore</p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/Vijaybhoomi.png?fm=png&auto=format&lossless=1" alt="Vijaybhoomi" class="img-fluid">
-                                                        <p>Vijaybhoomi University, Mumbai</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list">
-                                                        <img src="https://mindlerimages.imgix.net/tinyimg/York.png?fm=png&auto=format&lossless=1" alt="York" class="img-fluid">
-                                                        <p>York University, Ontario, Canada</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                                    <div class="partnerschool-list partnerschool-list-end">
-                                                        <p>...And many more!</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="modal-footer">
-                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Modal Close -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <div class="programs-page programs-page-10-12 mindler-others" style="margin-top:0">
             <div class="who-choose-banner" id="scroll-why">
                 <h3 class="h3-title">Why Choose Mindler vs. Other Platforms?</h3>
@@ -3738,7 +2466,7 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
             </div>
             </div>
         </footer>
-        <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/chatbot.js?1720605072" defer></script>
+        <script type="text/javascript" src="./assets/js/chatbot.js" defer></script>
 
         <!-- <div class="chatbox-container">
   <div onclick="updateVisibility()" id="chatIcon" class="chat-icon display">
@@ -3848,8 +2576,8 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
 
 
     <!-- Diwali Offer -->
-    <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/jquery.js" preload></script>
-    <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.js" preload></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?region=IN&key=AIzaSyA03q8RcyT0BnNz45QvWkR00du4bfc6RZo" defer></script>
 
@@ -3857,11 +2585,11 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
 
 
 
-    <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/lightslider.js"></script>
+    <script type="text/javascript" src="./assets/js/lightslider.js"></script>
 
-    <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/homepage-function.js?1720605072" async></script>
+    <script type="text/javascript" src="./assets/js/homepage-function.js" async></script>
 
-    <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/revamp.js?1737606527" async></script>
+    <script type="text/javascript" src="./assets/js/revamp.js" async></script>
 
 
 
@@ -3893,7 +2621,7 @@ src="https://www.facebook.com/tr?id=1568525417065395&ev=PageView&noscript=1"
     <!-- End of Quora Pixel Code -->
 
 
-    <script type='module' defer src="https://cdn.mindler.com/all-css/my-sets/js/social-media.js?20190802"></script>
+    <script type='module' defer src="./assets/js/social-media.js"></script>
     <!-- intercom chat -->
     <!-- <script>
        window.intercomSettings = {
@@ -4056,7 +2784,7 @@ s.parentNode.insertBefore(b, s);})();
 
 
     <!-- Partner monthly annualy tab click code -->
-    <script type="text/javascript" src="https://cdn.mindler.com/all-css/my-sets/js/mindler-ui-lazy.js" defer>
+    <script type="text/javascript" src="./assets/js/mindler-ui-lazy.js" defer>
     </script>
 
 
