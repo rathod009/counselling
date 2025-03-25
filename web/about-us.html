@@ -6,9 +6,533 @@
     <title>ACE-AI | AI Based Career Counselling</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="./assets/css/global-plugins.css">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/Mission.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Mission.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Mission.png">
+    <link href="./assets/css/my-styles.css" rel="stylesheet">
+    <link href="./assets/css/my-media.css" rel="stylesheet">
+    <link href="./assets/css/lightslider.css" rel="stylesheet">
+    <link href="./assets/css/revamp.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./assets/css/chatbot.css" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>About Us!</h1>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPLTG3F"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+         <!-- End Google Tag Manager (noscript) -->
+         <div class="overlay-box" style="display: none"><img src="./images/loader.gif" loading="lazy" /></div> 
+           <section id="preloader"> 
+             <div class="loader" id="loader"> 
+               <img src="./images/loader.gif" alt="Loading..." /> 
+             </div> 
+           </section>
+         <div class="user-block-main">
+             <span class="user-close"> <img src="./icons/close.png"></span>
+             <div class="user-block">
+                 <div class="set-item display" style="text-align: center;">
+                     <h3>I am a</h3>
+                     <div class="row" style="margin-left: 190px;">
+                         <div class="col-sm-4">
+                             <div class="user-selection zoom for-school" id="school-step-one">
+                                 <div class="img-sec"><img src="./icons/student.png" loading="lazy"></div>
+                                 <h4>student</h4>
+                             </div>
+                         </div>
+                         <div class="col-sm-4">
+                             <div class="user-selection zoom for-institution" id="institution-step-one">
+                                 <div class="img-sec"> <img src="./icons/parent.png"></div>
+                                 <h4>Parent</h4>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="set-item school-selection" id="school-step-two">
+                     <h3>I need help with</h3>
+                     <div class="row">
+                         <div class="col-sm-6" style="margin-left: 190px;">
+                             <div class="user-selection zoom for-counselling" onclick="googleEvent('Email Only Signup','Homepage','Student: Career Selection & Planning','')" id="step-email-signup">
+                                 <h4>Career Selection & Planning</h4>
+                                 <p> Find your best-fit career, stream, course or college through advanced assessments and expert guidance.
+                                 </p>
+                             </div>
+                         </div>
+                         
+                     </div>
+                     <a class="back to-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <div class="set-item institution-selection" id="institution-step-two">
+                     <h3>I am interested in</h3>
+                     <div class="row" >
+                         <div class="col-sm-6" style="margin-left: 170px;">
+                             <div class="user-selection zoom" id="step-form-cdp" onclick="googleEvent('Query Submitted','Homepage','Institution: Career Development Program','')">
+                                 <h4>Role of Parents and Support</h4>
+                                 <p>
+                                     State-of-the-art assessment & end-to-end AI Based career guidance to help your child discover their perfect career.
+                                 </p>
+                             </div>
+                         </div>
+                         
+                     </div>
+                     <a class="back to-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 
+                 <!-- school  -->
+                 <div class="set-item " id="step-email-signup-section">
+                     <h3 class="title">Ready to discover your perfect career? </h3>
+                     <h4 class="title">Enter your email id to take the Orientation Style test for free.</h4>
+                     <div class="form-with-content form-bg">
+                         <div class="item content">
+                             <div>
+                                 <h6>CAREER COUNSELLING PROGRAMS</h6>
+                                 
+                                 <div class="products-details">
+                                     <h4>Class 9-10</h4>
+                                     <strong>Career Selection &amp; Planning</strong>
+                                     <p>Expert guidance &amp; 5-dimensional assessment to help you discover your perfect career and choose the right course and college.
+                                     </p>
+                                 </div>
+                                 
+                             </div>
+                         </div>
+                         <div class="item form-box ">
+                             <div class="form-display">
+                                 <input type="email" data-source="Email Only" data-source-medium="Website" data-source-content="" data-source-description="Header" class="form-control" name="email" placeholder="Enter your email">
+                                 <a href="#" onclick="googleEvent('Email Only Signup', 'Homepage','Get Started: Career Selection & Planning','');" class="btn-action btn-secondry">Begin Test</a>
+                             </div>
+                             <div class="thankyou-display" style="display: none;">
+                                 <p style="font-weight:600">Thank you for contacting us!</p>
+                                 <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a class="back to-school-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <div class="set-item " id="step-form-section-student">
+                     <h3 class="title">Ready to pave your way to your dream college? </h3>
+                     <h4 class="title">Leave your details below and we will get in touch shortly.</h4>
+                     <div class="form-with-content form-bg">
+                         <div class="item content">
+                             <div>
+                                 <h6>COLLEGE APPLICATION PROGRAMS</h6>
+                                 <div class="products-details">
+                                     <h4>Overseas Application</h4>
+                                     <p>End-to-end overseas admissions guidance to help you build the perfect applications for your target universities.
+                                     </p>
+                                 </div>
+                                 <div class="products-details">
+                                     <h4>Liberal Arts Application
+                                     </h4>
+                                     <p>Comprehensive guidance and personalised application development for admissions to Liberal Arts programs.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="item form-box ">
+                             <div class="form-display">
+                                 <form id="liberal-art-help-form">
+                                     <div class="row">
+                                         <div class="col-md-6" style="padding-right:5px">
+                                             <input class="form-control text-cap" name="name" type="text" placeholder="Name">
+                                         </div>
+                                         <div class="col-md-6" style="padding-left:5px">
+                                             <input class="form-control" type="text" name="contact" placeholder="Contact">
+                                         </div>
+                                     </div>
+                                     <input class="form-control" type="email" name="email" placeholder="Email">
+                                     <select class="form-control" name="helpFor">
+                                <option disabled selected>I need help with</option>
+                                <option value="All">All</option>
+                                <option value="Overseas">Overseas</option>
+                                <option value="Liberal Arts">Liberal Arts</option>
+                                <option value="Other">Other</option>
+                             </select>
+                                     <textarea class="form-control" name="comment" placeholder="Message" style="height:60px; resize: none"></textarea>
+                                     <a href="#" onclick="googleEvent('Email Only Signup', 'Homepage','Get Started: College Applications','');" class="btn-action btn-secondry">Submit</a>
+                                 </form>
+                             </div>
+                             <div class="thankyou-display" style="display: none;">
+                                 <p style="font-weight:600">Thank you for contacting us!</p>
+                                 <p>One of our team members will respond in 3-4 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a class="back to-school-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <!-- school  -->
+                 <!-- institution- -->
+                 <div class="set-item " id="step-form-section-cdp">
+                     <h3 class="title">Ready to give your child the best of career guidance? </h3>
+                     <h4 class="title">Leave your details below and we will get in touch shortly. </h4>
+                     <div class="form-with-content form-bg">
+                         <div class="item content">
+                             <div>
+                                 <h6>Career Development Programs</h6>
+                                 <div class="products-details">
+                                     <h4>Career Development & <br> Planning Ecosystem
+                                     </h4>
+                                     <p>State-of-the-art assessment & end-to-end career guidance to help students discover their perfect career.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="item form-box ">
+                             <div class="form-display">
+                                 <form id="career-developement-programs">
+                                     <input class="form-control text-cap" name="school" type="text" placeholder="Your Name">
+                                     <input class="form-control" name="email" type="email" placeholder="Email">
+                                     <input class="form-control" name="mobile" type="text" placeholder="Contact">
+                                     <textarea class="form-control" name="message" placeholder="Message" style="height:60px; resize: none"></textarea>
+                                     <a href="#" class="btn-action btn-secondry" onclick="googleEvent('Email Only Signup', 'Homepage','Institution: Career Development Program','');">Submit</a>
+                                 </form>
+                             </div>
+                             <div class="thankyou-display" style="display: none;">
+                                 <p style="font-weight:600">Thank you for contacting us!</p>
+                                 <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a class="back to-institution-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <div class="set-item " id="step-form-section-cap">
+                     <h3 class="title">Ready to give your students the added edge? </h3>
+                     <h4 class="title">Leave your details below and we will get in touch shortly. </h4>
+                     <div class="form-with-content form-bg">
+                         <div class="item content">
+                             <div>
+                                 <h6>Career Advancement Programs</h6>
+                                 <div class="products-details">
+                                     <h4>MUN Training Program
+                                     </h4>
+                                     <p>Expert-led training and comprehensive guidance sessions to help students excel at MUN conferences.
+                                     </p>
+                                 </div>
+                                 <div class="products-details">
+                                     <h4>Mindler Talks
+                                     </h4>
+                                     <p>Career awareness and inspirational talks for students with professionals who have achieved success in their fields.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="item form-box ">
+                             <div class="form-display">
+                                 <form id="career-advancement-programs">
+                                     <div class="row">
+                                         <div class="col-md-6" style="padding-right:5px">
+                                             <input class="form-control text-cap" name="school" type="text" placeholder="School Name">
+                                         </div>
+                                         <div class="col-md-6" style="padding-left:5px">
+                                             <input class="form-control" type="text" name="contact" placeholder="Contact">
+                                         </div>
+                                     </div>
+                                     <input class="form-control" type="email" name="email" placeholder="Email">
+                                     <select class="form-control" name="interest">
+                                <option disabled selected>I am interested in</option>
+                                <option value="All">All</option>
+                                <option value="MUN Training Program">MUN Training Program</option>
+                                <option value="Mindler Talks">Mindler Talks</option>
+                             </select>
+                                     <textarea class="form-control" name="comment" placeholder="Message" style="height:60px; resize: none"></textarea>
+                                     <a href="#" class="btn-action btn-secondry" onclick="googleEvent('Email Only Signup', 'Homepage','Institution: Career Advancement Program','');">Submit</a>
+                                 </form>
+                             </div>
+                             <div class="thankyou-display" style="display: none;">
+                                 <p style="font-weight:600">Thank you for contacting us!</p>
+                                 <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a class="back to-institution-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <!-- institution- -->
+                 <!-- to-professionals -->
+                 <div class="set-item " id="step-iccc-section">
+                     <h3 class="title">Ready to upgrade your career counselling skills?</h3>
+                     <h4 class="title">Enter your email id to start your ICCC application. </h4>
+                     <div class="form-with-content form-bg">
+                         <div class="item content">
+                             <div>
+                                 <h6>Getting Certified (ICCC) </h6>
+                                 <div class="products-details">
+                                     <h4>International Certified <br> Career Coach (ICCC)
+                                     </h4>
+                                     <p>A 3-month program with emphasis on global practices, experiential learning & career guidance tools.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="item form-box ">
+                             <div class="form-display">
+                                 <form id="iccc-signup-form">
+                                     <input class="form-control" name="name" type="text" placeholder="Name">
+                                     <input class="form-control" name="email" type="email" placeholder="Email">
+                                     <input class="form-control" name="password" type="password" placeholder="New Password">
+                                     <a href="#" class="btn-action btn-secondry" onclick="googleEvent('Email Only Signup', 'Homepage','Career Professional: Getting Certified(ICCC)','');">Register for Free</a>
+                                 </form>
+                             </div>
+                             <div class="thankyou-display" style="display: none;">
+                                 <p style="font-weight:600">Thank you for contacting us!</p>
+                                 <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a class="back to-professional-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <div class="set-item " id="step-form-section-professional">
+                     <h3 class="title">Ready to grow as a counsellor? </h3>
+                     <h4 class="title">Leave your details below and we will get in touch shortly. </h4>
+                     <div class="form-with-content form-bg">
+                         <a href="https://www.mindler.com/partner/partner-registration" target="_blank">
+                             <div class="item content">
+                                 <div>
+                                     <h6>Partnering with Mindler </h6>
+                                     <div class="products-details">
+                                         <h4>Mindler Partner Program
+                                         </h4>
+                                         <p>World-class career assessment platform & tools to help you scale up your career counselling practice.
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </a>
+                         <div class="item form-box ">
+                             <div class="form-display">
+                                 <form id="partnering-with-mindler">
+                                     <div class="row">
+                                         <div class="col-md-6" style="padding-right:5px">
+                                             <input class="form-control text-cap" name="name" type="text" placeholder="Name">
+                                         </div>
+                                         <div class="col-md-6" style="padding-left:5px">
+                                             <input class="form-control" name="contact" type="text" placeholder="Contact">
+                                         </div>
+                                     </div>
+                                     <input class="form-control" name="email" type="email" placeholder="Email">
+                                     <input class="form-control" name="occupation" type="text" placeholder="Occupation">
+                                     <textarea class="form-control" name="comment" placeholder="Message" style="height:60px; resize: none"></textarea>
+                                     <a href="#" class="btn-action btn-secondry" onclick="googleEvent('Email Only Signup', 'Homepage','Career Professional: Partnering Mindler','');">Submit</a>
+                                 </form>
+                             </div>
+                             <div class="thankyou-display" style="display: none;">
+                                 <p style="font-weight:600">Thank you for contacting us!</p>
+                                 <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <a class="back to-professional-main"><i class="fa fa-angle-left"></i>Go back</a>
+                 </div>
+                 <!-- professional -->
+             </div>
+         </div>
+         <header class="new-header">
+             <div class="container">
+                 <div class="flex-box nav-header">
+                     <div class="items for-menu">
+                         <a href="./" class="mindler-logo">
+                             <!-- https://www.ace-ai.org/ -->
+                          <img src="./images/ACE-AI.png">
+                       </a>
+                         <span class="header-close">
+                          <i class="fa fa-bars"></i>
+                       </span>
+                     </div>
+                     <div class="items for-start">
+                         <div class="right-links">
+                             <a href="javascript:void(0)" style="background-color: #1F41BB; margin-top: 20px;" class="btn-action btn-secondry get-started" onclick="trackUserEvents('Get Started Button', 'Homepage','Header','','');">Get Started</a>
+                             <a onclick="googleEvent('Login', 'Homepage','Header','');" style="margin-bottom: 5px;" href="./Counselling-Login.html" class="btn btn-success">Log In</a>
+                         </div>
+                         <ul class="top-nav">
+                             
+                             <li class="for-students">
+                                 <span class="click">For Students</span>
+                                 <div class="top-menu-block">
+                                     <span class="top-menu-close"> <img src="./icons/close.png"></span>
+                                     <div class="container">
+                                         <div class="row">
+                                             <div class="col-md-4  column-1">
+                                                 <div class="for-products">
+                                                     <h3 style="color: #0076cc;">Career Counselling</h3>
+                                                     <div class="products-details">
+                                                         <a href="./counselling_page.html" target="_blank">
+                                                             <h4>Class 10-12</h4>
+                                                             <strong>Career Selection &amp; Planning</strong>
+                                                             <p>AI Based Career Guidance to help you discover your perfect career stream and choose the right course.
+                                                             </p>
+                                                             <div onclick="googleEvent('Program Details', 'Homepage','Students: Class 10-12','');" class="link">View Program Details
+                                                                 <i class="fa fa-angle-right"></i>
+                                                             </div>
+                                                         </a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="col-md-4 column-1">
+                                                 <div class="for-products">
+                         
+                                                 </div>
+                                             </div>
+                                             <div class="col-md-4 column-2">
+                                                 <div class="for-contact">
+                                                     <div class="address-box">
+                                                         <div class="contact-details">
+                                                             <p><a href="tel:+910000000000" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 00000 00000</a></p>
+                                                         </div>
+                                                         <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
+                                                         <div class="thankyou-display" style="display: none;">
+                                                             <p style="font-weight:600">Thank you for contacting us!</p>
+                                                             <p>One of our team members will respond in 3-4 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                                                         </div>
+                                                         <div class="contact-form">
+                                                             <div class="form-box ">
+                                                                 <form id="send-a-message">
+                                                                     <input class="form-control text-cap" name="name" type="text" placeholder="Name">
+                                                                     <input class="form-control" name="email" type="email" placeholder="Email">
+                                                                     <input class="form-control" name="contact" type="text" placeholder="Contact Number">
+                                                                     <textarea class="form-control" name="comment" placeholder="Message" style="height:80px; resize: none"></textarea>
+                                                                     <div class="text-right">
+                                                                         <a href="#" class="btn-action btn-default">Cancel</a>
+                                                                         <a href="javascript:void(0)" class="btn-action btn-secondry">Submit</a>
+                                                                     </div>
+                                                                 </form>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="link-box">
+                                                         <p><a href="web\about-us.html" class="text-link">About Us</a></p>
+                                                         <!-- https://www.ace-ai.org/about-us -->
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </li>
+                             <li class="for-parents">
+                                 <span class="click">For Parents</span>
+                                 <div class="top-menu-block">
+                                     <span class="top-menu-close"> <img src="./icons/close.png"></span>
+                                     <div class="container">
+                                         <div class="row">
+                                             <div class="col-md-4  column-1">
+                                                 <div class="for-products">
+                                                     <h3 style="color: #0076cc;">Why Career Counselling is Important?</h3>
+                                                     <div class="products-details">
+                                                         <a href="./letter_to_parents.html" target="_blank">
+                                                             <h4>Class 10-12</h4>
+                                                             <strong>Role of Parents and Support</strong>
+                                                             <p>State-of-the-art assessment & end-to-end AI Based career guidance to help students discover their perfect career.
+                                                             </p>
+                                                             <div onclick="googleEvent('Program Details', 'Homepage','Students: Class 10-12','');" class="link">A Letter to Parents
+                                                                 <i class="fa fa-angle-right"></i>
+                                                             </div>
+                                                         </a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="col-md-4 column-1">
+                                                 <div class="for-products">
+                         
+                                                 </div>
+                                             </div>
+                                             <div class="col-md-4 column-2">
+                                                 <div class="for-contact">
+                                                     <div class="address-box">
+                                                         <div class="contact-details">
+                                                             <p><a href="tel:+910000000000" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 00000 00000</a></p>
+                                                         </div>
+                                                         <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
+                                                         <div class="thankyou-display" style="display: none;">
+                                                             <p style="font-weight:600">Thank you for contacting us!</p>
+                                                             <p>One of our team members will respond in 3-4 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                                                         </div>
+                                                         <div class="contact-form">
+                                                             <div class="form-box ">
+                                                                 <form id="send-a-message">
+                                                                     <input class="form-control text-cap" name="name" type="text" placeholder="Name">
+                                                                     <input class="form-control" name="email" type="email" placeholder="Email">
+                                                                     <input class="form-control" name="contact" type="text" placeholder="Contact Number">
+                                                                     <textarea class="form-control" name="comment" placeholder="Message" style="height:80px; resize: none"></textarea>
+                                                                     <div class="text-right">
+                                                                         <a href="#" class="btn-action btn-default">Cancel</a>
+                                                                         <a href="javascript:void(0)" class="btn-action btn-secondry">Submit</a>
+                                                                     </div>
+                                                                 </form>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="link-box">
+                                                         <p><a href="web\about-us.html" class="text-link">About Us</a></p>
+                                                         <!-- https://www.ace-ai.org/about-us -->
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </li>
+                             
+                         </ul>
+                         <div class="for-contact for-mobile">
+                             <div class="address-box">
+                                 <div class="contact-details">
+                                     <p><a href="tel:+910000000000" style="font-size: 14px;color: #484848;"><img src="https://mindlerimages.imgix.net/home/header-call.svg" style="top: 0;">+91 00000 00000</a></p>
+                                 </div>
+                                 <p class="send-message"><img src="https://mindlerimages.imgix.net/home/header-chat.svg">Send a Message</p>
+                                 <div class="thankyou-display" style="display: none;">
+                                     <p style="font-weight:600">Thank you for contacting us!</p>
+                                     <p>One of our team members will respond in 2 working days to resolve your query. If your query is urgent, you can alternatively call our career helpline.</p>
+                                 </div>
+                                 <div class="contact-form">
+                                     <div class="form-box ">
+                                         <form id="send-a-message">
+                                             <input class="form-control text-cap" name="name" type="text" placeholder="Name">
+                                             <input class="form-control" name="email" type="email" placeholder="Email">
+                                             <input class="form-control" name="contact" type="text" placeholder="Contact Number">
+                                             <textarea class="form-control" name="comment" placeholder="Message" style="height:80px; resize: none"></textarea>
+                                             <div class="text-right">
+                                                 <a href="#" class="btn-action btn-default">Cancel</a>
+                                                 <a href="javascript:void(0)" class="btn-action btn-secondry">Submit</a>
+                                             </div>
+                                         </form>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="link-box">
+                                 <p><a href="https://www.mindler.com/success-stories" class="text-link">Success Stories</a> </p>
+                                 <p><a href="https://www.mindler.com/about-us" class="text-link">About Us</a></p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             </div>
+         </header>
+         <div class="homepage-new">
+             <div class="homepage-display new-homepage-display">
+                 </div>
+                 <div class="container">
+                     <div class="center-box" style="margin-top: 20px;">
+                         <h1>Discover Your Perfect Career</h1>
+                         <p>
+                             Make smart decisions with our revolutionary AI enabled career guidance
+                         </p>
+     
+                         
+                         <div>
+                             <h6 style="margin-top: 12px;">Career Assessment | Personalised Guidance through Generated Report</h6>
+                         </div>
+                         <!-- <span style="display: block;margin-top: 18px;font-size: 12px;"><span style="color: red">New!</span>  Applications for International Certified Career Coach (ICCC) - Cohort 3 are now open. <a href='https://www.mindler.com/iccc' target="_blank">Know More <i class="fa fa-angle-right" style="font-size: 13px;"></i></a></span> -->
+                         <!--  <span style="display: block;margin-top: 18px;font-size: 12px;"><span style="color: red">Independence Day Offer!</span>  Mindler Career Guidance programs starting at INR 1947 only. <a href='https://www.mindler.com/pricing?tag=stream' target="_blank">Know More <i class="fa fa-angle-right" style="font-size: 13px;"></i></a></span> -->
+                     </div>
+
+
+                     <script type="text/javascript" src="./assets/js/ui-lazy.js" defer></script>
+                     <script src="https://web.mxradon.com/t/Tracker.js"></script>
+                     <script type='module' defer src="./assets/js/social-media.js"></script> 
+    <script type="text/javascript" src="./assets/js/lightslider.js"></script>
+    <script type="text/javascript" src="./assets/js/homepage-function.js" async></script>
+    <script type="text/javascript" src="./assets/js/revamp.js" async></script>
+    <script type="text/javascript" src="./assets/js/jquery.js" preload></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>
