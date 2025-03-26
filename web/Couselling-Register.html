@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE - AI Register</title>
+    <link rel="stylesheet" href="./assets/css/Register.css">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/Mission.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Mission.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Mission.png">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Sign Up To ACE - AI</h2>
+            <div class="progress-indicator">STEP <span id="currentStep">1</span> OF 3</div>
+            <div class="progress-bar">
+                <div class="progress-bar-step active">1</div>
+                <div class="progress-bar-line active"></div>
+                <div class="progress-bar-step">2</div>
+                <div class="progress-bar-line"></div>
+                <div class="progress-bar-step">3</div>
+            </div>
+
+            <form id="signupForm">
+                <div id="step1" class="form-step active">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Full Name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="+91" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+
+                    <label for="password">Confirm Password</label>
+                    <input type="password" id="password" placeholder="Retype Password" required>
+
+                    <div class="navigation-buttons">
+                        <button type="button" id="nextBtn1">Continue</button>
+                    </div>
+                </div>
+
+                <div id="step2" class="form-step">
+                    <label for="otp">Enter OTP Recieved on Your Mobile No.</label>
+                    <input type="text" id="otp" placeholder="OTP" required>
+                    <p id="otpError" class="error-message"></p>
+
+                    <div class="navigation-buttons">
+                        <button type="button" id="nextBtn2">Verify OTP</button>
+                    </div>
+                </div>
+
+                <div id="step3" class="form-step">
+                    <label for="Type">City</label>
+                    <input type="text" id="city" placeholder="Your City Name">
+
+                    <div class="gender-selection">
+                        <label for="gender">Gender</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+
+                    <div class="navigation-buttons">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="image-container">
+            <div class="carousel">
+                <img style="width: 100%;" src="./images/guidance.png" alt="Slide 1" class="active">
+                <img style="width: 98%;" src="./images/gradient-1.jpg" alt="Slide 2">
+                <img style="width: 100%;" src="./images/gradient-2.jpg" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/Register.js"></script>
+</body>
+</html>

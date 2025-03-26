@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,8 +7,340 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+
+        .highlight {
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Language Switcher Styles */
+        .language-switcher {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+        }
+
+        .language-switcher button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        language-switcher button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .button {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>A Letter to parents About the Importance of Counselling for their child!</h1>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('gu')">ગુજરાતી</button>
+        <button onclick="changeLanguage('hi')">हिंदी</button>
+    </div>
+
+    <div class="container">
+        <h1 id="title1">Your Child's Path to Success</h1>
+
+        <div class="image-container">
+            <img src="./images/Career-Counselling1.gif" alt="Career Guidance Image">
+        </div>
+
+        <div class="section">
+            <h2 id="title2">Why Career Counselling is Important</h2>
+            <p id="p1">Dear Parents,</p>
+            <p id="p2">We understand that you want the best for your children. In today's world, there are many opportunities, but it can be confusing to know which path to take. Career counselling helps your child understand their strengths, interests, and abilities. It helps them choose a career that they will enjoy and succeed in.</p>
+
+            <div class="highlight">
+                <p><strong>Benefits of Career Counselling:</strong></p>
+                <ul id="ul1">
+                    <li>Helps your child discover their true potential.</li>
+                    <li>Provides information about different career options.</li>
+                    <li>Reduces confusion and stress about future choices.</li>
+                    <li>Improves decision-making skills.</li>
+                    <li>Leads to a more satisfying and successful career.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="title3">Why Encourage the Assessment Test?</h2>
+            <p id="p3">An assessment test is a simple way to understand your child's natural talents and interests. It's like a map that shows the right direction for their future. This test is designed to be easy and fun, and it can provide valuable insights.</p>
+
+            <div class="highlight">
+                <p><strong>What the Assessment Test Does:</strong></p>
+                <ul id="ul2">
+                    <li>Identifies your child's strengths and weaknesses.</li>
+                    <li>Suggests suitable career paths based on their abilities.</li>
+                    <li>Helps in making informed decisions about education and training.</li>
+                    <li>Provides a personalized report with clear recommendations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="title4">Helping Your Child Succeed</h2>
+            <p id="p4">Your support is crucial in helping your child make the right career choices. By encouraging them to take the assessment test and participate in counselling, you are giving them a valuable gift – the gift of a bright and successful future.</p>
+            <p id="p5">Remember, every child is unique, and career counselling helps them find their own special path.</p>
+        </div>
+
+        <a href="./index.html" class="button">Take the Assessment Test</a>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('title1').textContent = "Your Child's Path to Success";
+                document.getElementById('title2').textContent = "Why Career Counselling is Important";
+                document.getElementById('title3').textContent = "Why Encourage the Assessment Test?";
+                document.getElementById('title4').textContent = "Helping Your Child Succeed";
+                document.getElementById('p1').textContent = "Dear Parents,";
+                document.getElementById('p2').textContent = "We understand that you want the best for your children. In today's world, there are many opportunities, but it can be confusing to know which path to take. Career counselling helps your child understand their strengths, interests, and abilities. It helps them choose a career that they will enjoy and succeed in.";
+                document.getElementById('ul1').innerHTML = "<li>Helps your child discover their true potential.</li><li>Provides information about different career options.</li><li>Reduces confusion and stress about future choices.</li><li>Improves decision-making skills.</li><li>Leads to a more satisfying and successful career.</li>";
+                document.getElementById('p3').textContent = "An assessment test is a simple way to understand your child's natural talents and interests. It's like a map that shows the right direction for their future. This test is designed to be easy and fun, and it can provide valuable insights.";
+                document.getElementById('ul2').innerHTML = "<li>Identifies your child's strengths and weaknesses.</li><li>Suggests suitable career paths based on their abilities.</li><li>Helps in making informed decisions about education and training.</li><li>Provides a personalized report with clear recommendations.</li>";
+                document.getElementById('p4').textContent = "Your support is crucial in helping your child make the right career choices. By encouraging them to take the assessment test and participate in counselling, you are giving them a valuable gift – the gift of a bright and successful future.";
+                document.getElementById('p5').textContent = "Remember, every child is unique, and career counselling helps them find their own special path.";
+            } else if (lang === 'gu') {
+                document.getElementById('title1').textContent = "તમારા બાળકની સફળતાનો માર્ગ";
+                document.getElementById('title2').textContent = "કારકિર્દી સલાહ શા માટે મહત્વપૂર્ણ છે";
+                document.getElementById('title3').textContent = "મૂલ્યાંકન કસોટીને પ્રોત્સાહિત શા માટે કરવી?";
+                document.getElementById('title4').textContent = "તમારા બાળકને સફળ થવામાં મદદ કરવી";
+                 document.getElementById('p1').textContent = "પ્રિય માતાપિતા,";
+                 document.getElementById('p2').textContent = "અમે સમજીએ છીએ કે તમે તમારા બાળકો માટે શ્રેષ્ઠ ઇચ્છો છો. આજની દુનિયામાં, ઘણી તકો છે, પરંતુ કયો માર્ગ લેવો તે જાણવું મૂંઝવણભર્યું હોઈ શકે છે. કારકિર્દી સલાહ તમારા બાળકને તેમની શક્તિઓ, રુચિઓ અને ક્ષમતાઓને સમજવામાં મદદ કરે છે. તે તેમને એવી કારકિર્દી પસંદ કરવામાં મદદ કરે છે જેનો તેઓ આનંદ માણશે અને સફળ થશે.";
+                 document.getElementById('ul1').innerHTML = "<li>તમારા બાળકને તેમની સાચી સંભાવના શોધવામાં મદદ કરે છે.</li><li>વિવિધ કારકિર્દી વિકલ્પો વિશે માહિતી પૂરી પાડે છે.</li><li>ભાવિ પસંદગીઓ વિશે મૂંઝવણ અને તણાવ ઘટાડે છે.</li><li>નિર્ણય લેવાની કુશળતામાં સુધારો કરે છે.</li><li>વધુ સંતોષકારક અને સફળ કારકિર્દી તરફ દોરી જાય છે.</li>";
+                 document.getElementById('p3').textContent = "મૂલ્યાંકન કસોટી તમારા બાળકની કુદરતી પ્રતિભા અને રુચિઓને સમજવાની એક સરળ રીત છે. તે એક નકશા જેવું છે જે તેમના ભવિષ્ય માટે યોગ્ય દિશા દર્શાવે છે. આ કસોટી સરળ અને મનોરંજક બનાવવા માટે ડિઝાઇન કરવામાં આવી છે, અને તે મૂલ્યવાન આંતરદૃષ્ટિ પ્રદાન કરી શકે છે.";
+                 document.getElementById('ul2').innerHTML = "<li>તમારા બાળકની શક્તિઓ અને નબળાઈઓને ઓળખે છે.</li><li>તેમની ક્ષમતાઓના આધારે યોગ્ય કારકિર્દી માર્ગો સૂચવે છે.</li><li>શિક્ષણ અને તાલીમ વિશે માહિતગાર નિર્ણયો લેવામાં મદદ કરે છે.</li><li>સ્પષ્ટ ભલામણો સાથે વ્યક્તિગત અહેવાલ પૂરો પાડે છે.</li>";
+                 document.getElementById('p4').textContent = "તમારા બાળકને યોગ્ય કારકિર્દી પસંદગી કરવામાં મદદ કરવા માટે તમારો ટેકો નિર્ણાયક છે. તેમને મૂલ્યાંકન કસોટી લેવા અને કાઉન્સિલિંગમાં ભાગ લેવા માટે પ્રોત્સાહિત કરીને, તમે તેમને એક મૂલ્યવાન ભેટ આપી રહ્યા છો - તેજસ્વી અને સફળ ભવિષ્યની ભેટ.";
+                 document.getElementById('p5').textContent = "યાદ રાખો, દરેક બાળક અનન્ય છે, અને કારકિર્દી સલાહ તેમને તેમનો પોતાનો વિશેષ માર્ગ શોધવામાં મદદ કરે છે.";
+            } else if (lang === 'hi') {
+                document.getElementById('title1').textContent = "आपके बच्चे की सफलता का मार्ग";
+                document.getElementById('title2').textContent = "करियर परामर्श क्यों महत्वपूर्ण है";
+                document.getElementById('title3').textContent = "मूल्यांकन परीक्षण को प्रोत्साहित क्यों करें?";
+                document.getElementById('title4').textContent = "आपके बच्चे को सफल होने में मदद करना";
+                document.getElementById('p1').textContent = "प्रिय माता-पिता,";
+                document.getElementById('p2').textContent = "हम समझते हैं कि आप अपने बच्चों के लिए सर्वश्रेष्ठ चाहते हैं। आज की दुनिया में, कई अवसर हैं, लेकिन यह जानना भ्रमित करने वाला हो सकता है कि कौन सा रास्ता अपनाना है। करियर परामर्श आपके बच्चे को उनकी ताकत, रुचियों और क्षमताओं को समझने में मदद करता है। यह उन्हें एक ऐसा करियर चुनने में मदद करता है जिसका वे आनंद लेंगे और सफल होंगे।";
+                document.getElementById('ul1').innerHTML = "<li>आपके बच्चे को उनकी सच्ची क्षमता खोजने में मदद करता है।</li><li>विभिन्न करियर विकल्पों के बारे में जानकारी प्रदान करता है।</li><li>भविष्य की पसंद के बारे में भ्रम और तनाव को कम करता है।</li><li>निर्णय लेने के कौशल में सुधार करता है।</li><li>अधिक संतोषजनक और सफल करियर की ओर ले जाता है।</li>";
+                document.getElementById('p3').textContent = "मूल्यांकन परीक्षण आपके बच्चे की प्राकृतिक प्रतिभाओं और रुचियों को समझने का एक सरल तरीका है। यह एक मानचित्र की तरह है जो उनके भविष्य के लिए सही दिशा दिखाता है। यह परीक्षण आसान और मजेदार बनाने के लिए डिज़ाइन किया गया है, और यह मूल्यवान अंतर्दृष्टि प्रदान कर सकता है।";
+                document.getElementById('ul2').innerHTML = "<li>आपके बच्चे की ताकत और कमजोरियों की पहचान करता है।</li><li>उनकी क्षमताओं के आधार पर उपयुक्त करियर पथ का सुझाव देता है।</li><li>शिक्षा और प्रशिक्षण के बारे में सूचित निर्णय लेने में मदद करता है।</li><li>स्पष्ट सिफारिशों के साथ एक व्यक्तिगत रिपोर्ट प्रदान करता है।</li>";
+                document.getElementById('p4').textContent = "आपके बच्चे को सही करियर विकल्प चुनने में मदद करने के लिए आपका समर्थन महत्वपूर्ण है। उन्हें मूल्यांकन परीक्षण लेने और परामर्श में भाग लेने के लिए प्रोत्साहित करके, आप उन्हें एक मूल्यवान उपहार दे रहे हैं - एक उज्ज्वल और सफल भविष्य का उपहार।";
+                document.getElementById('p5').textContent = "याद रखें, हर बच्चा अद्वितीय है, और करियर परामर्श उन्हें अपना विशेष मार्ग खोजने में मदद करता है।";
+            }
+        }
+    </script>
 </body>
 </html>
+
+<!-- Old Code With Only English -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ACE-AI | AI Based Career Counselling</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            width: 100%; /* Take full width of the screen */
+        }
+
+        .container {
+            width: 100%; /* Take full width of the screen */
+            padding: 100px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        h1, h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 0 10px; /* Add some padding for smaller screens */
+        }
+
+        .highlight {
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 90%; /* Adjust image size for responsiveness */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .button {
+                width: 90%; /* Make button wider on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Child's Path to Success</h1>
+
+        <div class="image-container">
+            <img src="./images/Career-Counselling1.gif" alt="Career Guidance Image">
+        </div>
+
+        <div class="section">
+            <h2>Why Career Counselling is Important</h2>
+            <p>Dear Parents,</p>
+            <p>We understand that you want the best for your children. In today's world, there are many opportunities, but it can be confusing to know which path to take. Career counselling helps your child understand their strengths, interests, and abilities. It helps them choose a career that they will enjoy and succeed in.</p>
+
+            <div class="highlight">
+                <p><strong>Benefits of Career Counselling:</strong></p>
+                <ul>
+                    <li>Helps your child discover their true potential.</li>
+                    <li>Provides information about different career options.</li>
+                    <li>Reduces confusion and stress about future choices.</li>
+                    <li>Improves decision-making skills.</li>
+                    <li>Leads to a more satisfying and successful career.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Why Encourage the Assessment Test?</h2>
+            <p>An assessment test is a simple way to understand your child's natural talents and interests. It's like a map that shows the right direction for their future. This test is designed to be easy and fun, and it can provide valuable insights.</p>
+
+            <div class="highlight">
+                <p><strong>What the Assessment Test Does:</strong></p>
+                <ul>
+                    <li>Identifies your child's strengths and weaknesses.</li>
+                    <li>Suggests suitable career paths based on their abilities.</li>
+                    <li>Helps in making informed decisions about education and training.</li>
+                    <li>Provides a personalized report with clear recommendations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Helping Your Child Succeed</h2>
+            <p>Your support is crucial in helping your child make the right career choices. By encouraging them to take the assessment test and participate in counselling, you are giving them a valuable gift – the gift of a bright and successful future.</p>
+            <p>Remember, every child is unique, and career counselling helps them find their own special path.</p>
+        </div>
+
+        <a href="./index.html" class="button">Take the Assessment Test Now</a>
+    </div>
+</body>
+</html> -->

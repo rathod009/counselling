@@ -82,3 +82,17 @@ body {
     height: 40px;
     cursor: pointer;
 }
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.signup-link a {
+    color: #007bff; /* You can adjust the color */
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
