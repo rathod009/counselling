@@ -1,0 +1,114 @@
+    .modal {
+    display: none; /* Keeps it hidden on page load */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 800px; /* Increased width from 400px to 600px */
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    animation: scaleUp 0.3s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Ensuring it does not affect other elements */
+.column-1 {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.for-products {
+    text-align: center;
+}
+
+/* Ensuring Modal Doesn't Affect Other Styles */
+.modal label {
+    display: block;
+    margin: 10px 0;
+}
+
+.btn12 {
+    background: #0076cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 22px; /* Bigger size */
+    height: 22px;
+    border: 2px solid #0076cc; /* Blue border */
+    border-radius: 5px; /* Slight rounded edges */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    vertical-align: middle; /* Align with text */
+    margin-right: 8px; /* Space between checkbox and text */
+}
+
+/* Show the tick mark (✅) when checked */
+input[type="checkbox"]:checked::after {
+    content: "✅"; /* Tick mark */
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn12:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.model-p{
+    text-align: left;
+    font-size: 20px; /* Adjusted for readability */
+    line-height: 1.5; /* Spacing between lines */
+    font-weight: 400;
+    margin: 10px 0;
+}

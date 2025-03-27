@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="./assets/css/Login.css">
-    <link rel="icon" href="./images/Mission.png">
+    <link rel="stylesheet" href="{% static 'assets/css/Login.css' %}">
+    <link rel="icon" href="{% static 'images/Mission.png' %}">
 </head>
 <body>
     <div class="login-container">
         <h2>Login here</h2>
         <p>Welcome back, you've been missed!</p>
-    <form action="./index.html">
+    <form action="Login" method="POST">
         <div class="input-group">
             <label>Email</label>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" name="em" placeholder="Enter your email">
         </div>
         <div class="input-group">
             <label>Password</label>
-            <input type="password" placeholder="Enter your password">
+            <input type="password" name="pw" placeholder="Enter your password">
         </div>
+        <p style="color: red">{{ Err }}</p>
         <a href="#" class="forgot-password">Forgot your password?</a>
-        <button class="btn">Sign in</button>
+        <button class="btn" type="submit">Sign in</button>
         <p class="or">Or continue with</p>
         <div class="social-icons">
-            <img src="./icons/google.png" alt="Google">
+            <img src="{% static 'icons/google.png' %}" alt="Google">
         </div>
     </form>
     <p class="signup-link">
-        Don't have an account? <a href="./Couselling-Register.html">Create a new account</a>
+        Don't have an account? <a href="/Register">Create a new account</a>
     </p>
     </div>
 </body>
